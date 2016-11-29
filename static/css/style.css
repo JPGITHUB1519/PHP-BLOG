@@ -1,0 +1,398 @@
+*
+{
+    box-sizing: border-box;
+}
+
+html, body{
+    min-height: 100% !important;
+    height: 100% !important;
+    position:relative !important;
+}
+a
+{
+  cursor: pointer;
+}
+img
+{
+    max-width: 100%;
+}
+
+/* ==========================================================================
+   Text-clases
+   ========================================================================== 
+*/
+
+/* colors */
+.text-beatiful-red
+{
+	color: #CC4C43;
+}
+
+.text-beatiful-blue
+{
+	color: #2a03f4;
+}
+.text-black
+{
+	color: #000000;
+}
+.text-white
+{
+    color : #FFFFFF;
+}
+.text-info
+{
+  color : 01415A;
+}
+.text-light
+{
+    color: rgba(13, 14, 0, 0.61);
+}
+.bg-black
+{
+    background-color: #0e1111;
+}
+.bg-blue-beatiful
+{
+    background-color: #2c3e50;
+}
+.error-text
+{
+    color: #cc0000;
+    font-size : 1.5em;
+}
+
+.font-pacifico
+{
+    font-family: 'Pacifico', cursive;
+}
+.font-lobster
+{
+	font-family: 'Lobster', cursive;
+}
+
+/* sizes */
+.text-semi-large
+{
+	font-size: 1.5em;
+}
+.size-minus-one
+{
+    font-size: 15px;
+}
+
+/* ==========================================================================
+   Block-clases
+   ========================================================================== 
+*/
+
+body
+{
+	background-color: #ECEBE7;
+	font-family: 'Lato', sans-serif;
+}
+.box
+{
+    width: 100%;
+    float : left;
+}
+.date
+{
+	background-color: black;
+	color : white;
+}
+
+ul#nav
+{
+    padding: 0;
+}
+
+ul#nav li
+{
+    list-style: none;
+}
+
+ul#nav li a
+{
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 1.2em;
+    border-bottom: 1px solid #0A0A0A;
+    -webkit-transition : 0.2s;
+    -moz-transition : 0.2s;
+    -o-transition : 0.2s;
+    transition: 0.2s;
+}
+
+ul#nav li a:hover
+{
+    background-color: #030303;
+    color: #fff;
+}
+.sidebar
+{
+    width: 100%;
+    display: none;
+}
+.content
+{
+    padding: 15px;
+}
+.mobile-menu
+{
+    display: block;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    padding: 7px;
+    border-bottom: 1px #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.mobile-menu:hover
+{
+    text-decoration: none;
+}
+
+.mobile-menu:active
+{
+    background-color: #4a4a4a;
+    text-decoration: none;
+}
+
+.img-user
+{
+    max-width: 35px;
+    margin-right: 5px;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== 
+*/
+
+.centered-form
+{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* ==========================================================================
+   Center - Stuffs
+   ========================================================================== 
+*/
+
+.text-center
+{
+    text-align: center;
+}
+.center-block
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important;
+}
+.little-text
+{
+  font-size: 1em;
+}
+
+/* ==========================================================================
+   Only - Classes
+   ========================================================================== 
+*/
+
+.text-center-only-small
+{
+	text-align: center;
+}
+
+.visible-only-mobile
+{
+	display: block;
+}
+
+.visible-only-large
+{
+	display: none;
+}
+
+/* ==========================================================================
+   Utilities Classes
+   ========================================================================== 
+*/
+
+.little-padding
+{
+	padding : 0.5em;
+}
+.little-margin-top
+{
+  margin-top: 1.5em;
+}
+.little-margin-left
+{
+    margin-left: 1em;
+}
+.very-little-margin-top-px
+{
+  margin-top: 5px;
+}
+
+#image
+{
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.invisible
+{
+  display: none !important;
+}
+
+.visible
+{
+  display: block !important;
+}
+.float-left
+{
+  float: left;
+}
+.float-right
+{
+  float: right;
+}
+.display-block
+{
+  display: block;
+}
+.full-width
+{
+  width: 100%;
+}
+.full-container
+{
+  width : 100% !important;
+  margin: 0 auto !important;
+}
+.my-well
+{
+    border: 1px solid #e3e3e3;
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f3f5f7;
+    border-radius: 4px;.
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+.fixed
+{
+    position: fixed;
+}
+.error-panel
+{
+    background: rgba(210, 14, 53, 0.92) !important;
+    color: white !important;
+}
+.good-panel
+{
+    background-color: #f5f5f5 !important;
+    color: black !important;
+}
+/* ==========================================================================
+   Tables
+   ========================================================================== 
+*/
+
+thead tr:first-child td
+{
+    background-color: black;
+    color: white
+}
+
+tbody tr:nth-child(odd)
+{
+    background-color: #f5f5f5;
+    color: black;
+}
+
+tbody tr:nth-child(even)
+{
+    background-color: white;
+    color: black;
+}
+
+
+
+/* ==========================================================================
+   Responsive Media Queries
+   ========================================================================== 
+*/
+@media only screen and (min-width: 768px) 
+{
+    .sidebar
+    {
+        width: 25%;
+        height : 100vh;
+        float : left;
+        /* this for keep when desktop when do not push the button */
+        display: block !important; 
+    }
+    .content
+    {
+        width: 75%;
+    }
+    .mobile-menu
+    {
+        display: none;
+    }
+    /* For tablets: */
+
+    .text-center-only-small
+    {
+    	text-align: initial;
+    }
+    .visible-only-mobile
+    {
+    	display: none;
+    }
+
+}
+@media only screen and (min-width: 992px) 
+{
+
+    /* For desktop: */
+    .visible-only-large
+    {
+    	display: block;
+    }
+}
+
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+/* clearing groups*/
+/* group is clearing the floats within the element with the class of group,*/
+/* an this have support for order browser too */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
