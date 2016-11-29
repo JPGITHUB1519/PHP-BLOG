@@ -49,5 +49,12 @@
 			return $db->executeQuery("INSERT INTO post (iduser, title, content, date,status) VALUES(?,?,?,CURDATE(),?)", [$this->iduser, $this->title, $this->content, $this->status]);
 		}
 
+		public static function getTop10()
+		{
+			$db = new Database();
+			$query = "SELECT post.*, user.iduser, user.name as username FROM post INNER JOIN user on post.iduser = user.iduser LIMIT 10";
+			return $db->getRows($query);
+		}
+
 	}
 ?>

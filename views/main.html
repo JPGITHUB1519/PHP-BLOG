@@ -2,5 +2,28 @@
 {% block title %}Blog Posts {% endblock %}
 
 {% block content %}
-	<h1>Hello {{ name }}</h1>
+	<div id="post">
+		{% for p in lista_post %}
+			<div class="row" id="blog-header">
+				<div class="col-md-1 date text-center visible-only-large">
+					<p>{{ p.date }}</p>
+				</div>
+				<div class="col-md-10">
+					<h1 class="text-beatiful-red font-lobster">{{ p.title }}</h1>
+				</div>
+			</div>
+
+			<div class="row" id="blog-data">
+				<div class="col-sm-6">
+					<p class="font-pacifico text-semi-large text-center-only-small" >Written By {{ p.username }}</p>
+				</div>
+			</div>
+
+			<div class="row" id="blog-content">
+				<div class="col-md-12">
+					<p>{{ p.content }}</p>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
 {% endblock %}
